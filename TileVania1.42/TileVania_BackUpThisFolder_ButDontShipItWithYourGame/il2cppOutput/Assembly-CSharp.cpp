@@ -157,8 +157,6 @@ struct InputActionState_tE8F8D2439CDB9528D77707FB251FBE280C34664C;
 struct InputValue_t310BBA52EF008D59FD92A1454CD49D2B1AAC1C4A;
 // UnityEngine.UI.LayoutElement
 struct LayoutElement_tE514951184806899FE23EC4FA6112A5F2038CECF;
-// LevelExit
-struct LevelExit_tD587173B861E34B940B23EF527FEA14E540B0E55;
 // UnityEngine.Material
 struct Material_t8927C00353A72755313F046D0CE85178AE8218EE;
 // UnityEngine.Mesh
@@ -5767,36 +5765,6 @@ public:
 };
 
 
-// LevelExit
-struct LevelExit_tD587173B861E34B940B23EF527FEA14E540B0E55  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
-{
-public:
-	// UnityEngine.Animator LevelExit::coins
-	Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * ___coins_4;
-	// UnityEngine.Animator LevelExit::myAnimator
-	Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * ___myAnimator_5;
-
-public:
-	inline static int32_t get_offset_of_coins_4() { return static_cast<int32_t>(offsetof(LevelExit_tD587173B861E34B940B23EF527FEA14E540B0E55, ___coins_4)); }
-	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * get_coins_4() const { return ___coins_4; }
-	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 ** get_address_of_coins_4() { return &___coins_4; }
-	inline void set_coins_4(Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * value)
-	{
-		___coins_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___coins_4), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_myAnimator_5() { return static_cast<int32_t>(offsetof(LevelExit_tD587173B861E34B940B23EF527FEA14E540B0E55, ___myAnimator_5)); }
-	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * get_myAnimator_5() const { return ___myAnimator_5; }
-	inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 ** get_address_of_myAnimator_5() { return &___myAnimator_5; }
-	inline void set_myAnimator_5(Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * value)
-	{
-		___myAnimator_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___myAnimator_5), (void*)value);
-	}
-};
-
-
 // PlayerMovement
 struct PlayerMovement_t324642B864F0A1AE4225A972674F8FD21DCA5F09  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
@@ -10532,10 +10500,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CPlusFillPanelU3Ed__14__ctor_m77468BCA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReLoadLevelU3Ed__15__ctor_mA86A46CE0CF3118564508B3FB93D3CF447AAD1D7 (U3CReLoadLevelU3Ed__15_tE58C788B6CC1E80AF33E62EF01D6284D0079BA9D * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
 // System.Void GameSession/<ReLoadZero>d__16::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReLoadZeroU3Ed__16__ctor_m2F69E59289A79D81D1EF6722F585876DE2B4323F (U3CReLoadZeroU3Ed__16_tDCCCEEA0BEE81ED01AF215FE433EC786CC828F74 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
-// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
-// System.Void UnityEngine.Animator::SetTrigger(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_m2D79D155CABD81B1CC75EFC35D90508B58D7211C (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___name0, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Animator>()
 inline Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * Component_GetComponent_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_mF86B79BED8570481BDFC54EAEF1F692E0508BA38 (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
 {
@@ -10568,6 +10532,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovement_ClimbLadder_mD287433B2B71
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovement_Die_mEE19591E6BB295276E46178F81CC568F23819B0B (PlayerMovement_t324642B864F0A1AE4225A972674F8FD21DCA5F09 * __this, const RuntimeMethod* method);
 // System.Collections.IEnumerator PlayerMovement::StageExit()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayerMovement_StageExit_m6C47D3CBB605BBA0683584DE79036EEC01DEB257 (PlayerMovement_t324642B864F0A1AE4225A972674F8FD21DCA5F09 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Animator::SetTrigger(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_m2D79D155CABD81B1CC75EFC35D90508B58D7211C (Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * __this, String_t* ___name0, const RuntimeMethod* method);
 // System.Collections.IEnumerator PlayerMovement::FillPanel()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayerMovement_FillPanel_m4F6BF70B50ADBC3F8A623D7D9EF47289190F0EAF (PlayerMovement_t324642B864F0A1AE4225A972674F8FD21DCA5F09 * __this, const RuntimeMethod* method);
 // System.Collections.IEnumerator PlayerMovement::LoadNextLevel()
@@ -11414,88 +11380,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameSession__ctor_m7A23EA1283AFD52547E4A
 		__this->set_firstLevel_11(1);
 		// int level_BGM_Index = 1; // Start ?? ??? ????? -1? ????
 		__this->set_level_BGM_Index_12(1);
-		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void LevelExit::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelExit_Start_mD0E2FFEBABB2FA3292B885780DD26A329CE680A7 (LevelExit_tD587173B861E34B940B23EF527FEA14E540B0E55 * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindObjectOfType_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_mB5220C1B1322A791E5C5B7AFAC70B4CD0A97C2F0_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// myAnimator = FindObjectOfType<Animator>();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_0;
-		L_0 = Object_FindObjectOfType_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_mB5220C1B1322A791E5C5B7AFAC70B4CD0A97C2F0(/*hidden argument*/Object_FindObjectOfType_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_mB5220C1B1322A791E5C5B7AFAC70B4CD0A97C2F0_RuntimeMethod_var);
-		__this->set_myAnimator_5(L_0);
-		// coins = FindObjectOfType<Animator>();
-		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_1;
-		L_1 = Object_FindObjectOfType_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_mB5220C1B1322A791E5C5B7AFAC70B4CD0A97C2F0(/*hidden argument*/Object_FindObjectOfType_TisAnimator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149_mB5220C1B1322A791E5C5B7AFAC70B4CD0A97C2F0_RuntimeMethod_var);
-		__this->set_coins_4(L_1);
-		// }
-		return;
-	}
-}
-// System.Void LevelExit::OnTriggerEnter2D(UnityEngine.Collider2D)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelExit_OnTriggerEnter2D_m7E35D1E2DDA6729DA62C43D3DBCB8A9B885BB0B0 (LevelExit_tD587173B861E34B940B23EF527FEA14E540B0E55 * __this, Collider2D_tDDBF081328B83D21D0BA3B5036D77B32528BA722 * ___other0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBE14B5CF98221AA69533306F461EEDFCFD3A9A28);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if(coins != null)
-		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_0 = __this->get_coins_4();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_001a;
-		}
-	}
-	{
-		// Destroy(coins);
-		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_2 = __this->get_coins_4();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		Object_Destroy_m3EEDB6ECD49A541EC826EA8E1C8B599F7AF67D30(L_2, /*hidden argument*/NULL);
-		// }
-		return;
-	}
-
-IL_001a:
-	{
-		// myAnimator.SetTrigger("Ending");
-		Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 * L_3 = __this->get_myAnimator_5();
-		NullCheck(L_3);
-		Animator_SetTrigger_m2D79D155CABD81B1CC75EFC35D90508B58D7211C(L_3, _stringLiteralBE14B5CF98221AA69533306F461EEDFCFD3A9A28, /*hidden argument*/NULL);
-		// myAnimator = null;
-		__this->set_myAnimator_5((Animator_t9DD1D43680A61D65A3C98C6EFF559709DC9CE149 *)NULL);
-		// }
-		return;
-	}
-}
-// System.Void LevelExit::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelExit__ctor_m2B6C0152A77E47821F764C74A81361B163163C13 (LevelExit_tD587173B861E34B940B23EF527FEA14E540B0E55 * __this, const RuntimeMethod* method)
-{
-	{
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
